@@ -1,88 +1,159 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Contact</title>
 
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
+
 
 <body class="bg-light">
 
+
+
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg bg-light py-3">
+
   <div class="container">
+
 
     <a class="navbar-brand fw-bold text-secondary" href="index.html">
       Sami
     </a>
 
-    <div class="ms-auto">
-      <ul class="navbar-nav gap-3">
+
+
+    <!-- Hamburger knop -->
+    <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+
+
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+
+      <ul class="navbar-nav ms-auto text-center gap-lg-3">
+
+
         <li class="nav-item">
+
           <a class="nav-link text-secondary fw-semibold" href="Aboutme.html">
             About
           </a>
+
         </li>
 
+
+
         <li class="nav-item">
+
           <a class="nav-link text-secondary fw-semibold" href="projecten.html">
             Projecten
           </a>
+
         </li>
 
+
+
         <li class="nav-item">
+
           <a class="nav-link text-secondary fw-semibold" href="index.html">
             Home
           </a>
+
         </li>
+
+
       </ul>
+
+
     </div>
+
 
   </div>
+
 </nav>
 
+
+
+
+
+
+<!-- Contact formulier -->
 <section class="container py-5">
 
-  <h1 class="text-center mb-5">
-    Kom in contact met mij
-  </h1>
 
-  <form>
+  <div class="row justify-content-center">
 
-    <div class="row mb-3">
 
-      <div class="col-md-6">
-        <input
-                type="text" class="form-control py-3" placeholder="Je naam">
-      </div>
+    <div class="col-12 col-md-10 col-lg-8">
 
-      <div class="col-md-6">
-        <input
-                type="email" class="form-control py-3" placeholder="Je e-mail">
-      </div>
 
-    <div class="mb-3">
-      <input
-              type="text" class="form-control py-3" placeholder="Onderwerp">
+
+      <h1 class="text-center mb-5">
+        Kom in contact met mij
+      </h1>
+
+
+
+
+      <form>
+
+
+
+        <div class="row g-3 mb-3">
+
+
+          <div class="col-12 col-md-6">
+
+            <input
+                    type="text"
+                    class="form-control py-3"
+                    placeholder="Je naam">
+
+          </div>
+
+
+
+          <div class="col-12 col-md-6">
+
+            <input
+                    type="email"
+                    class="form-control py-3" placeholder="Je e-mail">
+          </div>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control py-3" placeholder="Onderwerp">
+        </div>
+
+        <div class="mb-4">
+          <textarea class="form-control" rows="7" placeholder="Bericht"></textarea>
+        </div>
+
+        <div class="text-center">
+
+          <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">
+            Stuur bericht
+          </button>
+        </div>
+      </form>
     </div>
-
-    <div class="mb-4">
-            <textarea
-                    class="form-control" rows="7" placeholder="Bericht"></textarea>
-    </div>
-
-    <div class="text-center">
-      <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">
-        Stuur bericht
-      </button>
-    </div>
-
-  </form>
-
+  </div>
 </section>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
