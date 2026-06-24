@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas: 
+        "hd hd hd"
+        "h2 mn as"
+        "ft ft ft";
+}
+
+
+
+header,
+main,
+aside,
+footer,
+h2{
+    background-color: rgb(210, 210, 210);
+    border: 10px solid rgb(150, 150, 150);
+    border-radius: 14px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+
+header{
+    grid-area: hd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 36px;
+}
+
+
+h2{
+    grid-area: h2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+
+main{
+    grid-area: mn;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.game{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 8px;
+    background-color: rgb(250, 243, 224);
+    padding: 10px;
+    border-radius: 14px;
+    box-shadow: inset 0 4px 8px rgba(0,0,0,0.15);
+}
+
+
+.cell{
+    background-color: rgb(245, 235, 210);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.cell:hover{
+    background-color: rgb(235, 220, 190);
+    transform: scale(1.05);
+}
+
+
+.cell.x{
+    color: rgb(47, 133, 90);
+    font-weight: bold;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+.cell.o{
+    color: rgb(192, 86, 33);
+    font-weight: bold;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+
+aside{
+    grid-area: as;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer{
+    grid-area: ft;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
